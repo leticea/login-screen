@@ -11,7 +11,7 @@
     <div id="page" class="flex">
       <div>
         <header>
-          <img src="./assets/logo.svg" alt="">
+          <img src="./assets/logo.svg" alt="" />
         </header>
         <main>
           <div class="headline">
@@ -33,8 +33,18 @@
                 <a href="#">Esqueceu a senha?</a>
               </div>
               <input type="password" id="password" />
-              <img class="eye show-password" src="./assets/eye-off.svg" alt="" />
-              <img class="eye hide-password hide" src="./assets/eye.svg" alt="" />
+              <img
+                onclick="togglePassword()"
+                class="eye"
+                src="./assets/eye-off.svg"
+                alt=""
+              />
+              <img
+                onclick="togglePassword()"
+                class="eye hide"
+                src="./assets/eye.svg"
+                alt=""
+              />
             </div>
 
             <button type="submit">Entrar</button>
@@ -46,7 +56,19 @@
           </form>
         </main>
       </div>
-      <img src="./assets/bg.jpg" alt="">
+      <img src="./assets/bg.jpg" alt="" />
     </div>
+
+    <script>
+      function togglePassword() {
+        document
+          .querySelectorAll(".eye")
+          .forEach((eye) => eye.classList.toggle("hide"));
+
+        const type =
+          password.getAttribute("type") == "password" ? "text" : "password";
+        password.setAttribute("type", type);
+      }
+    </script>
   </body>
 </html>
