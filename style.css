@@ -52,6 +52,26 @@ form {
   margin-top: 4rem;
 }
 
+form button {
+  all: unset;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 2.4rem;
 
+  background: #7c3aed;
+  border-radius: 4px;
 
+  width: 100%;
+
+  font-weight: bold;
+  color: #ffffff;
+}
+
+form button:active,
+form button:hover,
+form button:focus {
+  outline: 2px solid #000;
+  border-radius: 0.2rem;
+}
