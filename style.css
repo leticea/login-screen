@@ -52,6 +52,18 @@ form {
   margin-top: 4rem;
 }
 
+form input {
+  width: 100%;
+  background: #ffffff;
+  border: 0.1rem solid #e2e8f0;
+  border-radius: 0.4rem;
+  padding: 1.6rem 1.2rem;
+}
+
+form .input-wrapper + .input-wrapper {
+  margin-top: 1.6rem;
+}
+
 form button {
   all: unset;
 
@@ -67,11 +79,15 @@ form button {
 
   font-weight: bold;
   color: #ffffff;
+
+  margin-block: 3.2rem;
 }
 
-form button:active,
-form button:hover,
 form button:focus {
   outline: 2px solid #000;
   border-radius: 0.2rem;
+}
+
+form button:hover {
+  background: #9f67ff;
 }
