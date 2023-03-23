@@ -18,12 +18,17 @@ body {
 button {
   all: unset;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
   color: #7c3aed;
   font-weight: 700;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 #page {
@@ -50,20 +55,35 @@ a {
   position: relative;
 }
 
+.input-wrapper + .input-wrapper {
+  margin-top: 1.6rem;
+}
+
 .label-wrapper {
   justify-content: space-between;
+}
+
+.label-wrapper label + a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .eye {
   width: 2rem;
   height: 2rem;
   position: absolute;
-  top: 52%;
-  right: 5%;
+  top: 55%;
+  right: 2%;
+  cursor: pointer;
 }
 
 .hide {
   display: none;
+}
+
+.create-account {
+  color: #475569;
 }
 
 header img {
@@ -98,33 +118,34 @@ label {
   color: #1e293b;
 }
 
-label + a {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-}
-
 input::placeholder {
-  font-size: 14px;
-  line-height: 21px;
   color: #94a3b8;
 }
 
-form {
-  margin-top: 4rem;
-}
-
-form input {
+input {
   width: 100%;
   background: #ffffff;
   border: 0.1rem solid #e2e8f0;
   border-radius: 0.4rem;
   padding: 1.6rem 1.2rem;
   margin-top: 0.8rem;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1e293b;
 }
 
-form .input-wrapper + .input-wrapper {
-  margin-top: 1.6rem;
+input:focus,
+input:hover {
+  border: 1px solid #7c3aed;
+  outline: none;
+}
+
+input:disabled {
+  opacity: 0.35;
+}
+
+form {
+  margin-top: 4rem;
 }
 
 form button {
