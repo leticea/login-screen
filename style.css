@@ -34,6 +34,20 @@ body {
   max-width: 35rem;
 }
 
+.input-wrapper {
+  position: relative;
+}
+
+.label-wrapper {
+  justify-content: space-between;
+}
+
+.eye {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+}
+
 header img {
   width: 16rem;
   height: 5.4rem;
@@ -58,6 +72,7 @@ form input {
   border: 0.1rem solid #e2e8f0;
   border-radius: 0.4rem;
   padding: 1.6rem 1.2rem;
+  margin-top: 0.8rem;
 }
 
 form .input-wrapper + .input-wrapper {
