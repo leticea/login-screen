@@ -22,6 +22,8 @@ button {
 
 a {
   text-decoration: none;
+  color: #7c3aed;
+  font-weight: 700;
 }
 
 #page {
@@ -87,6 +89,25 @@ h1 {
 h1 + p {
   color: #475569;
   margin-top: 1.6rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1e293b;
+}
+
+label + a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: #94a3b8;
 }
 
 form {
