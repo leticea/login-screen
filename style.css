@@ -12,6 +12,7 @@
 
 body {
   font-size: 1.6rem;
+  font-family: "Titillium Web", sans-serif;
 }
 
 button {
@@ -75,6 +76,17 @@ img {
 
 main {
   margin-top: 11.4rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+  line-height: 5.5rem;
+  color: #1e293b;
+}
+
+h1 + p {
+  color: #475569;
+  margin-top: 1.6rem;
 }
 
 form {
