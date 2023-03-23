@@ -30,13 +30,28 @@ body {
   display: flex;
 }
 
-img {
-  width: 100%;
-  object-fit: cover;
+.headline {
+  max-width: 35rem;
 }
 
 header img {
   width: 16rem;
   height: 5.4rem;
 }
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+main {
+  margin-top: 11.4rem;
+}
+
+form {
+  margin-top: 4rem;
+}
+
+
+
 
